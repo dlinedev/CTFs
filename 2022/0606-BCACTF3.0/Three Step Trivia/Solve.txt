@@ -1,0 +1,8 @@
+7.75
+http://web.bcactf.com:49207/7_75
+GET
+11674
+http://web.bcactf.com:49207/11674
+style="visibility: hidden;"
+163
+bcactf{sT41r_c4A3_m45T3R_5jfUn9Z}

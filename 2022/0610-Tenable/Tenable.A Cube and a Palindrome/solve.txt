@@ -1,0 +1,17 @@
+┌──(kali㉿kali)-[~/Desktop]
+└─$ /opt/nessus/bin/nasl -VV /home/kali/Desktop/TenableCTF/timestamp.nbin
+Enter timestamp:1656297720
+Too late!
+No description
+                                                                             
+┌──(kali㉿kali)-[~/Desktop]
+└─$ /opt/nessus/bin/nasl -VV /home/kali/Desktop/TenableCTF/timestamp.nbin
+Enter timestamp:1656297720
+flag{numbers_are_neat}
+No description
+                                                                             
+┌──(kali㉿kali)-[~/Desktop]
+└─$ /opt/nessus/bin/nasl -VV /home/kali/Desktop/TenableCTF/timestamp.nbin
+Enter timestamp:1656297720
+Too soon!
+No description

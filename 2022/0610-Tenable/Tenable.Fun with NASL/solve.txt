@@ -1,0 +1,8 @@
+20	var b2 = _FCT_ANON_ARGS[1]			var b2 = _FCT_ANON_ARGS[1];
+33	rt -= 1;							ret -= 1;
+71	ret = o.d(a:ret, _FCT_ANON_ARGS[0]);	ret = o.d(ret, _FCT_ANON_ARGS[0]);
+5	ab = 40+[3];						ab = 43;
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ /opt/nessus/bin/nasl -W -P 'line_numbers=20,33,71,5' /home/kali/Desktop/TenableCTF/org_flag.nasl
+flag{N4SL_is_n34t}

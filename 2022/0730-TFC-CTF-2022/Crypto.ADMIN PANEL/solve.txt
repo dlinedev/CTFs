@@ -1,0 +1,24 @@
+參考 main.py 可以反向其中 XORing 的值
+寫一個 decoder(solve.py) 並且發現猜測範圍很小 直接爆破即可
+然後因為題目是開 netcat
+就寫一個自動打進去的 solve_auto.py
+
+
+b'2. Change Password'
+b'========================'
+b'> Password > Wrong password!'
+b'========================'
+b'1. Access Flag'
+b'2. Change Password'
+b'========================'
+b'> Password > Wrong password!'
+b'========================'
+b'1. Access Flag'
+b'2. Change Password'
+b'========================'
+b'> Password > Wrong password!'
+b'========================'
+b'1. Access Flag'
+b'2. Change Password'
+b'========================'
+b'> Password > TFCCTF{l0g0n_z3r0_w1th_3xtr4_st3ps!}'

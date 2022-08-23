@@ -1,0 +1,59 @@
+import bpy
+from base64 import b64decode
+
+bpy.ops.object.select_all(action="SELECT")
+bpy.context.scene.cursor.location = (0, 0, 0)
+bpy.ops.object.delete(use_global=False, confirm=False)
+bpy.ops.object.camera_add(
+    enter_editmode=False,
+    align="VIEW",
+    location=(0, 0, 0),
+    rotation=(1.1169, 0.01420, 0.8269),
+    scale=(1, 1, 1),
+)
+bpy.ops.transform.translate(
+    value=(4.58569, -4.20269, 3.1699),
+    orient_type="GLOBAL",
+    orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
+)
+bpy.ops.mesh.primitive_monkey_add(
+    size=2, enter_editmode=False, align="WORLD", location=(0, 0, 0), scale=(1, 1, 1)
+)
+u =  "__"[1:] + 'x_N3r0f__'[2:-2][::-1]
+yrsth = "b" + str(len(bpy.context.object.data.polygons[0].vertices) - 3) + str(len(bpy.context.object.data.polygons[2].vertices) - 1)+ "NdR__" +  "Xp_R3"[1::-1] + chr(len(bpy.context.object.data.polygons[3].vertices) + int(42.5*2)) + "YtH0"[1:-1] + str(len(bpy.context.object.data.polygons[5].vertices) ** 0 - 1) + "N_4ND" + u
+bpy.ops.object.light_add(
+    type="POINT", radius=1, align="WORLD", location=(0, -2.5, 0), scale=(1, 1, 1)
+)
+x = (
+    int(
+        0x0000000000000080
+        + 0x0000000000000240
+        + 0x0000000000000840
+        - 0x0000000000000AC0
+    )
+    - 2
+)
+bpy.context.object.data.energy = 50
+bpy.context.object.data.color = (1, 1, 0.69420)
+
+a = (
+    str(
+        b64decode(
+            (
+                chr(x - 0x000000000000001)
+                + chr(x - 0x000000000000001 * 10 // 2 + 6 - 6 % 4)
+                + ("wemR3YhNmY")
+            )[::-1]
+        )
+    )[:-1]
+    + yrsth
+    + "}"
+)[2:]
+bpy.data.curves.new(type="FONT", name="Font Curve").body = a
+font_obj = bpy.data.objects.new(
+    name="Font Object", object_data=bpy.data.curves["Font Curve"]
+)
+bpy.context.scene.collection.objects.link(font_obj)
+font_obj.location = (0, 0.8, 1.2)
+font_obj.rotation_euler = (90, 0, 0)
+font_obj.scale = (0.75, 0.75, 0.75)
